@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhurandhar Art & Gallery</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #faf9f6; /* Off-white canvas feel */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #aec6cf, #b19cd9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo-text h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        /* Hero / Profile Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: #f0f4f8;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 18px;
+            max-width: 60px;
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            padding: 50px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .art-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .art-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .art-img {
+            width: 100%;
+            height: 350px;
+            background: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-style: italic;
+        }
+
+        .art-info {
+            padding: 20px;
+        }
+
+        .art-info h3 {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .art-info p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-placeholder">🎨</div>
+            <div class="logo-text">
+                <h1>Dhurandhar</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="avatar">👓</div>
+        <h2>The Artist & Detective</h2>
+        <p>Mastering Water-color Sakuntala, Geometry Solvers, & Solving Mysteries.</p>
+    </section>
+
+    <section class="gallery-container">
+        <h2 class="gallery-title">The Masterpieces</h2>
+        
+        <div class="gallery-grid">
+            <div class="art-card">
+                <div class="art-img">
+                    Water-color Sakuntala Image Placeholder
+                </div>
+                <div class="art-info">
+                    <h3>Water-color Sakuntala</h3>
+                    <p>A fluid, traditional blend of strokes bringing classic poetry to life.</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="art-img">
+                    Geometry Art Placeholder
+                </div>
+                <div class="art-info">
+                    <h3>Geometric Cube Nets</h3>
+                    <p>Where precise mathematical structure meets abstract aesthetics.</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="art-img">
+                    Byomkesh Tribute Placeholder
+                </div>
+                <div class="art-info">
+                    <h3>Chapa Khanar Khun</h3>
+                    <p>A dark, noir-style visual tribute to classic detective mysteries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dhurandhar Art. Created by Rocky (Your PBF) 🚀</p>
+    </footer>
+
+</body>
+</html>
